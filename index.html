@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	
+</head>
+
+<body>
+  <div id="console"><h1>fizzbuzz</h1></div>
+	<!--<p>Click button below to see answer to fizzbuzz challenge</p>
+	<button id="fizzbuzzbutton"> Click me! </button>
+	<div class="answer"></div>-->
+<script type="text/javascript">
+ $(function(){
+ 	var max = prompt("What's your maximum number?")
+ 	max = parseInt(max)
+ 	function fizzbuzzcount(max) {
+ 	for (var i = 1; i <= max; i++) {
+ 		if (i % 15 == 0) {
+ 			$("div#console").append("<p> fizzbuzz </p>")
+ 		}
+ 		else if (i % 5 == 0) {
+ 			$("div#console").append("<p> buzz </p>")
+ 		}
+ 		else if (i % 3 == 0) {
+ 			$("div#console").append("<p> fizz </p>")
+ 		}
+ 		else {$("div#console").append("<p>" + i + "</p>")}
+ 	}
+ };
+ fizzbuzzcount(max)
+ }) 	
+</script>	
+</body>
+</html>
